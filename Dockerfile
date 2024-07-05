@@ -5,5 +5,5 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm run build
-EXPOSE 9999
+EXPOSE 4444
 CMD [ "npm", "start" ]
