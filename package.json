@@ -1,0 +1,29 @@
+{
+    "name": "moviles_hashtagram-ws",
+    "version": "0.0.1",
+    "description": "",
+    "main": "app.ts",
+    "scripts": {
+        "dev": "nodemon --exec ts-node app.ts",
+        "build": "rimraf ./dist && tsc",
+        "start": "npm run build && node dist/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Luis Zamorano M",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "nodemon": "^3.0.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "@types/node": "^20.11.16",
+        "@types/ws": "^8.5.10",
+        "dotenv": "^16.4.1",
+        "express": "^4.18.2",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.3.3",
+        "ws": "^8.18.0"
+    }
+}
