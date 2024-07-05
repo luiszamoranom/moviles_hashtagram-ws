@@ -19,7 +19,7 @@ wss.on('connection', (ws: any) => {
 
       clients.forEach((client: any) => {
         if (client.readyState === WebSocket.OPEN) {
-          client.send(`Servidor envió: ${message}`);
+          client.send(message);
         }
       });
     });
